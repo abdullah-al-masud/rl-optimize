@@ -8,4 +8,4 @@ The true nature of this repository will be providing high quality open source im
 
 # Contributors
 
-We are actively searching for researchers and contributors who can help us building this open source library and will be joining the team to serve human being with advanced ML based optimization solutions.
+We are actively searching for researchers and contributors who can help us building this open source library and will be joining the team to serve mankind with advanced ML based optimization solutions.
