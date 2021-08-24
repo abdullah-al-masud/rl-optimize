@@ -4,7 +4,7 @@ The main objective of this repository is to research and develop optimization pr
 
 Our current works are very limited to a bunch of specific problem solvers and we will focus on building ML models or a single model if possible to solve all types of optimization problems.
 
-The true nature of this repository will be providing high quality open source implementations but at the same time will also be kept private partially of under-development works.
+The true nature of this repository will be to provide high quality open source implementations but at the same time will also be kept private partially of under-development works.
 
 # Contributors
 
