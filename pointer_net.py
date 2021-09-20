@@ -40,6 +40,8 @@ class PN_Actor(torch.nn.Module):
         
         # other initializations
         self.zero_mask = torch.zeros(self.config.batch_size, self.config.problem_size).to(dtype=self.dtype, device=self.device)
+        if self.config.size_diff > 0:
+            self.zero_mask[:, -self.config.size_diff:] = 1
         self.neg_inf = 1e8
         self.range_index = torch.tensor(list(range(self.config.batch_size)), device=self.device).long()
         self.start_index_tensor = (torch.ones(self.config.batch_size) * self.config.start_index).to(device=self.device).long()
@@ -107,12 +109,12 @@ class PN_Actor(torch.nn.Module):
 #         mask[:, self.config.start_index] = 1
 #         start = 1
 
-        # decoder poiting partial calculation
+        # decoder pointing partial calculation
         wenc = torch.matmul(enc, self.Wref)
         wenc_g = torch.matmul(enc, self.Wref_g)
         # print('wenc.shape:', wenc.shape, wenc.min(), '; wenc_g.shape:', wenc_g.shape, wenc_g.min())
         # decoder rollout loop
-        for i in range(start, self.config.problem_size):
+        for i in range(start, self.config.problem_size - self.config.size_diff):
             h, c = self.lstm_dec(x, (h, c))
             # print('h.shape:', h.shape, h.min())
             

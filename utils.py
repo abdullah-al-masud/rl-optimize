@@ -18,7 +18,7 @@ def result_stats(solutions, keyname, basename=None, other_keys=[]):
         [solutions[algo][key] for algo in algos], index=algos).T for key in other_keys}
 
     ncols = 1 if basename is None else 2
-    fig, ax = plt.subplots(ncols=ncols, figsize=(20, 4))
+    fig, ax = plt.subplots(ncols=ncols, figsize=(15, 5))
     if ncols == 1:
         ax = [ax]
     tags = [keyname, 'relative %s' % keyname]
