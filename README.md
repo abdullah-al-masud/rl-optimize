@@ -12,7 +12,7 @@ The true nature of this repository will be to provide high quality open source i
 All dependecies are listed inside requirements.txt except Pytorch library.
 
 
-# Installations
+# Installation
 
 Open command line and type
 ```
