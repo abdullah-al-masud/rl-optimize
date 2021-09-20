@@ -30,7 +30,7 @@ To install Pytorch, please check the installation procedures here- https://pytor
 
 ## TSP
 
-We have used google ORtools to benchmark our results. We trained our models in a low-spec GPU, so the computation time shown in below images are to be ignored. Also due to limitation of compution resulrce, our models were not trained with proper number of epochs as specified in google paper ![Neural Combinatorial Optimization with Reinforcement Learning](https://arxiv.org/abs/1611.09940). Yet the result is very close to what the paper mentioned.
+We have used google ORtools to benchmark our results. We trained our models in a low-spec GPU, so the computation time shown in below images are to be ignored. Also due to limitation of compution resulrce, our models were not trained with proper number of epochs as specified in google paper [Neural Combinatorial Optimization with Reinforcement Learning](https://arxiv.org/abs/1611.09940). Yet the result is very close to what the paper mentioned.
 
 The results are shown below-
 
