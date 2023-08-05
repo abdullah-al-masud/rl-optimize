@@ -6,3 +6,4 @@ msdlib
 tqdm
 scipy
 ortools
+torch

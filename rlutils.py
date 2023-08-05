@@ -1,7 +1,6 @@
 import time
 import numpy as np
 from tqdm import tqdm
-import argparse
 import torch
 import os
 

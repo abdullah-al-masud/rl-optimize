@@ -36,7 +36,7 @@ def main(config):
         print('model weights are loaded for inference... ')
     else:
         config.size_diff = 0
-        config.diff_Type = 'eq'
+        config.diff_type = 'eq'
         agent = Agent(config)
         print('training is being started...')
         t = time.time()

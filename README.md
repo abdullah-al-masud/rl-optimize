@@ -21,9 +21,8 @@ cd rl-optimize
 pip install -r requirements.txt
 ```
 
+Note: Python version 3.8, 3.9 are supported. (Ortools fails at 3.11 for some reason.)
 Last command's "pip" portion may vary based on OS or Anaconda.
-
-To install Pytorch, please check the installation procedures here- https://pytorch.org/.
 
 
 # Results
